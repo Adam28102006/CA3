@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import AccessibilityToggle from '@/Components/ACC_Toggle'
+import AccessibilityToggle from '../Components/ACC_Toggle'
 
 export default function Page() {
   return (
