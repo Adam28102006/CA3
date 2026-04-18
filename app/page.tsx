@@ -1,13 +1,11 @@
-export default function Page() {
-  return  import Link from 'next/link'
-
+import Link from 'next/link'
 import AccessibilityToggle from '@/Components/ACC_Toggle'
 
-<AccessibilityToggle/>
-
-export default function HomePage() {
+export default function Page() {
   return (
     <div>
+      <AccessibilityToggle />
+
       <h2>Welcome to Campus Companion</h2>
 
       <p>
@@ -18,16 +16,16 @@ export default function HomePage() {
         <h3>Features</h3>
         <ul style={styles.list}>
           <li>
-            <Link href="/events"> View Events</Link>
+            <Link href="/events">View Events</Link>
           </li>
           <li>
-            <Link href="/timetable"> Check Timetable</Link>
+            <Link href="/timetable">Check Timetable</Link>
           </li>
           <li>
-            <Link href="/canteen"> Canteen Menu</Link>
+            <Link href="/canteen">Canteen Menu</Link>
           </li>
           <li>
-            <Link href="/lost-found"> Lost & Found</Link>
+            <Link href="/lost-found">Lost & Found</Link>
           </li>
         </ul>
       </section>
@@ -38,5 +36,5 @@ export default function HomePage() {
 const styles = {
   list: {
     lineHeight: '2rem',
-  },/h1>;
+  },
 }
