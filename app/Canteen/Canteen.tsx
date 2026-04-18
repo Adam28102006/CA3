@@ -1,4 +1,4 @@
-import canteen from '@/Data/Canteen.json'
+import canteen from '@/data/canteen.json'
 
 export default function CanteenPage() {
   return (
